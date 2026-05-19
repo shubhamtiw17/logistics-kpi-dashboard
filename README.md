@@ -7,23 +7,23 @@ A comprehensive **3-tier logistics performance dashboard** built in Power BI, tr
 ## Dashboard Pages
 
 ### Executive Summary
-Bird's eye view of all three mile stages in a single page — key KPIs per stage with monthly trend lines for on-time performance and transit efficiency.
+Bird's eye view of all three mile stages in a single page, key KPIs per stage with monthly trend lines for on-time performance and transit efficiency.
 
-### First Mile — Warehouse to Hub
+### First Mile: Warehouse to Hub
 Tracks warehouse dispatch and pickup performance with tabbed KPI views:
 - On-Time & Late Departure Rate (15-min threshold)
 - On-Time & Late Arrival Rate
 - Pickup Rate & Late Pickup Rate
 - Transit Damage Rate & Time to Ship
 
-### Middle Mile — Hub to Store
+### Middle Mile: Hub to Store
 Tracks inter-hub and hub-to-store transit performance:
 - On-Time & Late Departure from Hub
 - On-Time & Late Arrival at Store
 - Avg Transit Days & Idle Time
 - Capacity Utilization & Avg Cost per Shipment
 
-### Last Mile — Store to Customer
+### Last Mile: Store to Customer
 Tracks final delivery performance to end customer:
 - On-Time Delivery Rate & Successful Delivery Rate
 - Failed Delivery Rate & Return to Origin (RTO) Rate
@@ -43,11 +43,11 @@ Tracks final delivery performance to end customer:
 | `first_mile.csv` | 60,720 | 28 | Warehouse departures, hub arrivals, pickup events |
 | `middle_mile.csv` | 60,720 | 25 | Hub-to-store transit, capacity, temperature data |
 | `last_mile.csv` | 60,720 | 32 | Delivery attempts, success/failure, cost, ratings |
-| `orders_master.csv` | 60,000 | 6 | Order dimension table — value, priority, segment |
+| `orders_master.csv` | 60,000 | 6 | Order dimension table, value, priority, segment |
 
 - **Date range:** January 2023 — December 2024 (2 years)
 - **Total rows:** 242,160
-- **Deliberately includes:** null values, duplicate rows, outliers, inconsistent casing — for data cleaning practice
+- **Deliberately includes:** null values, duplicate rows, outliers, inconsistent casing for data cleaning practice
 
 ---
 
@@ -84,10 +84,10 @@ orders_master
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-Measures-blue)
 
-- **Power BI Desktop** — dashboard development
-- **Power Query (M)** — data cleaning and transformation
-- **DAX** — 30+ custom measures across all mile stages
-- **Python** — synthetic dataset generation (pandas, numpy)
+- **Power BI Desktop**: dashboard development
+- **Power Query (M)**: data cleaning and transformation
+- **DAX**: 30+ custom measures across all mile stages
+- **Python**: synthetic dataset generation (pandas, numpy)
 
 ---
 
@@ -103,9 +103,9 @@ logistics-kpi-dashboard/
 │       └── orders_master.csv
 ├── screenshots/
 │   ├── Summary.png
-│   ├── First Mile.png
-│   ├── Middle Mile.png
-│   └── Last Mile.png
+│   ├── first_mile.png
+│   ├── middle_mile.png
+│   └── last_mile.png
 ├── logistics-kpi-dashboard.pbix
 └── README.md
 ```
@@ -118,13 +118,13 @@ logistics-kpi-dashboard/
 ![Executive Summary](screenshots/Summary.png)
 
 ### First Mile
-![First Mile](screenshots/First Mile.png)
+![First Mile](screenshots/first_mile.png)
 
 ### Middle Mile
-![Middle Mile](screenshots/Middle Mile.png)
+![Middle Mile](screenshots/middle_mile.png)
 
 ### Last Mile
-![Last Mile](screenshots/Last Mile.png)
+![Last Mile](screenshots/last_mile.png)
 
 ---
 
